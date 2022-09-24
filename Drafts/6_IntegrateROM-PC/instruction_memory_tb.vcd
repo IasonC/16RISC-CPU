@@ -1,0 +1,139 @@
+$date
+	Tue Mar 01 18:40:15 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module instruction_memory_tb $end
+$var wire 24 ! instr [23:0] $end
+$var reg 1 " clk $end
+$var reg 1 # reset $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 1 # reset $end
+$var wire 8 $ pc_count [7:0] $end
+$var wire 24 % instr [23:0] $end
+$scope module pc $end
+$var wire 1 " clk $end
+$var wire 1 # reset $end
+$var reg 8 & pc_count [7:0] $end
+$upscope $end
+$scope module rom $end
+$var wire 8 ' address [7:0] $end
+$var wire 24 ( data_out [23:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx '
+bx &
+bx %
+bx $
+x#
+1"
+bx !
+$end
+#10000
+0#
+0"
+#20000
+1"
+#30000
+0"
+#40000
+1"
+#50000
+0"
+1#
+#60000
+b11000010000000000000000 !
+b11000010000000000000000 %
+b11000010000000000000000 (
+b0 $
+b0 &
+b0 '
+1"
+#70000
+0"
+#80000
+1"
+#90000
+0"
+#100000
+1"
+#110000
+0"
+0#
+#120000
+b10000000000000100000110 !
+b10000000000000100000110 %
+b10000000000000100000110 (
+b1 $
+b1 &
+b1 '
+1"
+#130000
+0"
+#140000
+b10000000000001000001100 !
+b10000000000001000001100 %
+b10000000000001000001100 (
+b10 $
+b10 &
+b10 '
+1"
+#150000
+0"
+#160000
+b100100001001100000000 !
+b100100001001100000000 %
+b100100001001100000000 (
+b11 $
+b11 &
+b11 '
+1"
+#170000
+0"
+#180000
+bx !
+bx %
+bx (
+b100 $
+b100 &
+b100 '
+1"
+#190000
+0"
+#200000
+b101 $
+b101 &
+b101 '
+1"
+#210000
+0"
+#220000
+b110 $
+b110 &
+b110 '
+1"
+#230000
+0"
+1#
+#240000
+b11000010000000000000000 !
+b11000010000000000000000 %
+b11000010000000000000000 (
+b0 $
+b0 &
+b0 '
+1"
+#250000
+0"
+#260000
+1"

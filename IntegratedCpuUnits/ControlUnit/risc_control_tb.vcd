@@ -1,0 +1,161 @@
+$date
+	Sat Sep 24 02:47:46 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module risc_control_tb $end
+$var wire 1 ! write_enable $end
+$var wire 1 " reg_write $end
+$var wire 1 # ram_read $end
+$var wire 1 $ mem_to_reg $end
+$var wire 1 % jmp $end
+$var wire 1 & dest_reg $end
+$var wire 1 ' bne $end
+$var wire 1 ( beq $end
+$var wire 1 ) alu_src $end
+$var wire 2 * alu_op [1:0] $end
+$var reg 1 + condition1 $end
+$var reg 1 , condition2 $end
+$var reg 1 - condition3 $end
+$var reg 4 . opcode [3:0] $end
+$var reg 6 / tests_passed [5:0] $end
+$scope module dut $end
+$var wire 4 0 opcode [3:0] $end
+$var reg 2 1 alu_op [1:0] $end
+$var reg 1 ) alu_src $end
+$var reg 1 ( beq $end
+$var reg 1 ' bne $end
+$var reg 1 & dest_reg $end
+$var reg 1 % jmp $end
+$var reg 1 $ mem_to_reg $end
+$var reg 1 # ram_read $end
+$var reg 1 " reg_write $end
+$var reg 1 ! write_enable $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 1
+bx 0
+b0 /
+bx .
+x-
+x,
+x+
+b0 *
+0)
+0(
+0'
+1&
+0%
+0$
+0#
+1"
+0!
+$end
+#10000
+b1 /
+1-
+1,
+1+
+#20000
+b10 *
+b10 1
+1#
+1$
+1)
+0&
+b10 /
+b0 .
+b0 0
+#21000
+1!
+0#
+0"
+0$
+b1 .
+b1 0
+b11 /
+#22000
+b0 *
+b0 1
+0!
+1"
+0)
+1&
+b10 .
+b10 0
+b100 /
+#23000
+b11 .
+b11 0
+b101 /
+#24000
+b100 .
+b100 0
+b110 /
+#25000
+b101 .
+b101 0
+b111 /
+#26000
+b110 .
+b110 0
+b1000 /
+#27000
+b111 .
+b111 0
+b1001 /
+#28000
+b1000 .
+b1000 0
+b1010 /
+#29000
+b1001 .
+b1001 0
+b1011 /
+#30000
+b1010 .
+b1010 0
+b1100 /
+#31000
+b1 *
+b1 1
+1(
+0"
+0&
+b1011 .
+b1011 0
+b1101 /
+#32000
+1'
+0(
+b1100 .
+b1100 0
+b1110 /
+#33000
+1%
+b0 *
+b0 1
+0'
+b1101 .
+b1101 0
+b1111 /
+#34000
+0%
+1"
+1&
+b1110 .
+b1110 0
+b10000 /
+#35000
+b1010 .
+b1010 0
+b10001 /
+#36000
+b10010 /

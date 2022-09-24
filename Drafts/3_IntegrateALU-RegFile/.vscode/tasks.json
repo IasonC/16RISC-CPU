@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile",
+            "type": "shell",
+            "command": "iverilog",
+            "args": [
+                "-g",
+                "2012",
+                "-o",
+                "df_${fileBasenameNoExtension}.vvp",
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Simulate",
+            "type": "shell",
+            "command": "vvp",
+            "args": [
+                "df_${fileBasenameNoExtension}.vvp"
+            ],
+            "dependsOn": [
+                "Compile"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
