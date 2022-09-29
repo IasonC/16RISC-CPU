@@ -6,6 +6,8 @@ This project is a 16-bit RISC Harvard-architecture CPU coded fully in SystemVeri
 
 ## Instruction Set
 
+## Unit and Integration Testing
+
 
 ## Future Work
 
